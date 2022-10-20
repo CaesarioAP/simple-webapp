@@ -5,9 +5,9 @@ pipeline {
   
   environment {
     // Adjust variables below
-    ARGOCD_SERVER = "10.4.6.10:32218"
-    APP_MANIFEST_REPO = "https://github.com/btech-training-team/simple-webapp-manifest.git"
-    IMAGE_NAME = "docker.io/atwatanmalikm/webapp"
+    ARGOCD_SERVER = "10.4.2.10:30907"
+    APP_MANIFEST_REPO = "https://github.com/CaesarioAP/simple-webapp-manifest.git"
+    IMAGE_NAME = "docker.io/caesar92/webapp"
 
     // Don't change variables below
     TAG = sh (script: "date +%y%m%d%H%M", returnStdout: true).trim()
