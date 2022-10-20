@@ -7,7 +7,7 @@ pipeline {
     // Adjust variables below
     ARGOCD_SERVER = "10.4.2.10:30907"
     APP_MANIFEST_REPO = "https://github.com/CaesarioAP/simple-webapp-manifest.git"
-    IMAGE_NAME = "docker.io/caesar92/webapp:2210160543"
+    IMAGE_NAME = "docker.io/caesar92/webapp"
 
     // Don't change variables below
     TAG = sh (script: "date +%y%m%d%H%M", returnStdout: true).trim()
